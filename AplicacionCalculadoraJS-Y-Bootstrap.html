@@ -1,0 +1,49 @@
+<!--Con el codigo bootstrap (lo buscamos en google bootstrap->en el buscador de la 
+    pagina: starter template-> copiamos el codigo)
+
+-->
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+    <title>Aplicacion Calculadora</title>
+  </head>
+
+  <body>
+    <div class='container'>
+        <h1 style="text-align: center;">Aplicacion Calculadora</h1>
+        <form id="forma">
+            <div class="mb-3" style="text-align: left;"><!--Para dar espacio en vez de br podemos usar esta clase ya 
+            definida "margin bottom a 3 espacios"-->
+            <br/>
+            <label for="operandoA">Operando A</label>
+            <input type="number" class="form-control"
+            placeholder="Escribe operando A" id="operandoA"/> <!--Con form-control de bootstrap se logran
+            las esquinas redondeadas y el estilo de la caja de texto-->
+            </div>
+            <div class="mb3" style="text-align: left;">
+                <label for="operandoB">Operando B</label>
+                <input type="number" class="form-control"
+                placeholder="Escribe operando B" id="operandoB"/>
+            </div>
+            <br/>
+            <buttom type="submit" class="btn btn-primary mb-3" onclick="sumar()">
+            Sumar
+            </buttom>
+            <div id="resultado">
+
+            </div>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="/JS/app.js"></script>
+   
+  </body>
+</html>
